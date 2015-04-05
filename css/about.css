@@ -1,0 +1,10 @@
+ul.list-bullet {
+	list-style: none;
+}
+
+span.big-red {
+	list-style: none;
+
+	color: #772432;
+	font-size: 18px;
+}
