@@ -1,0 +1,11 @@
+.workshops-table {
+	margin-left: auto;
+	margin-right: auto;	
+	
+	margin-top: 20px;
+}
+
+.workshops-table td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
