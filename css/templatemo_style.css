@@ -420,8 +420,7 @@ h6 {
 }
 
 #bx-pager a {
-  margin: 20px 10px 0 20px;
-  padding: 0 0 40px 0;
+  margin: 24px 0px;
   display: inline-block;
   opacity: 0.4;
   filter: alpha(opacity=40);
@@ -435,8 +434,6 @@ h6 {
 #bx-pager a.active {
   opacity: 1;
   filter: alpha(opacity=100);
-  background: url(../images/active-state.png) no-repeat;
-  background-position: center 85px;
 }
 
 .bx-controls {
