@@ -221,7 +221,7 @@ body {
 }
 
 a {
-  color: #26b864;
+  color: #772432;
   text-decoration: none !important;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -307,61 +307,45 @@ h6 {
    ========================================================================== */
 .site-header {
   position: fixed;
-  min-height: 102px;
-  height: 102px;
   width: 100%;
   z-index: 9999;
-  background-color: #161616;
+  background-color: #004165;
 }
 
 #templatemo_logo {
-  background-color: #26b864;
-  background-image: url(../images/templatemo_logo.png);
-  background-repeat: no-repeat;
-  background-position: 30px center;
-  height: 102px;
-  display: block;
+  height: inherit;
 }
 #templatemo_logo h1 {
   margin: 0;
   text-transform: uppercase;
   font-weight: 600;
-  line-height: 102px;
-  display: block;
 }
 #templatemo_logo h1 a {
-  margin-left: 140px;
   color: white;
-  display: block;
+  font-size: .5em;
+}
+#templatemo_logo h1 a div {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .main-menu {
   text-align: right;
   position: relative;
 }
-.main-menu ul {
-  position: absolute;
-  background-color: #161616;
-  width: 100%;
-}
 .main-menu ul li {
   display: inline-block;
-  width: 150px;
   text-align: center;
-  line-height: 102px;
 }
 .main-menu ul li a {
+  border-top: 1px solid #004165;
   color: white;
-  font-weight: 600;
-  font-size: 18px;
-  text-transform: uppercase;
-  outline: 0;
-  border: 0;
+  font-size: 12px;
+  padding: 36px 12px;
   display: block;
 }
 .main-menu ul li a.current {
-  background: url(../images/active-state.png) no-repeat;
-  background-position: center 65px;
+  border-top: 1px white solid;
 }
 
 .toggle-menu {
@@ -384,7 +368,7 @@ h6 {
 }
 .responsive .main-menu ul li a.current {
   background-image: none;
-  color: #26b864;
+  color: #772432;
   border-bottom: 0;
 }
 
@@ -392,7 +376,7 @@ h6 {
     Slider Styling
    ========================================================================== */
 .site-slider {
-  padding-top: 102px;
+  padding-top: 95px;
 }
 .site-slider ul li {
   float: left;
@@ -405,11 +389,11 @@ h6 {
 }
 
 .bx-wrapper {
-  background-color: #161616;
+  background-color: #772432;
 }
 
 .bx-thumbnail-wrapper {
-  background-color: #161616;
+  background-color: #772432;
   text-align: center;
   margin-top: -1px;
   position: relative;
@@ -480,9 +464,9 @@ h6 {
 }
 
 /* ==========================================================================
-    Services Styling
+    About Styling
    ========================================================================== */
-#services {
+#about {
   padding-top: 160px;
   margin-top: -60px;
 }
@@ -524,7 +508,7 @@ h6 {
    ========================================================================== */
 .item-small {
   padding: 20px;
-  background-color: #26b864;
+  background-color: #772432;
   color: white;
   text-align: center;
 }
@@ -578,7 +562,7 @@ h6 {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 3px solid #26b864;
+  border: 3px solid #772432;
   padding: 20px;
   z-index: 97;
   background-color: rgba(255, 255, 255, 0.9);
@@ -602,7 +586,7 @@ h6 {
   background: url(../images/active-state.png) no-repeat;
   background-position: center 20px;
   padding-bottom: 30px;
-  color: #26b864;
+  color: #772432;
   font-weight: 600;
   font-size: 16px;
   text-transform: uppercase;
@@ -624,7 +608,7 @@ h6 {
   font-style: normal;
 }
 .product-item span em.price {
-  color: #26b864;
+  color: #772432;
 }
 .product-item span em.text-muted {
   color: #a3a7aa;
@@ -663,7 +647,7 @@ input.button {
   width: auto;
   background: url(../images/active-state.png) no-repeat;
   background-position: center bottom;
-  color: #26b864;
+  color: #772432;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
@@ -673,7 +657,7 @@ input.button {
 
 .site-footer {
   margin-top: 120px;
-  background-color: #26b864;
+  background-color: #772432;
   color: white;
   padding: 25px 0;
 }
