@@ -651,16 +651,13 @@ input, textarea {
 }
 
 input.button {
-  display: inline-block;
-  width: auto;
-  background: url(../images/active-state.png) no-repeat;
-  background-position: center bottom;
+  display: block;
+  margin: 0 auto;
   color: #772432;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
-  padding-bottom: 27px;
-  border: 0;
+  border: 1px solid #b5c1c9;
 }
 
 .site-footer {
