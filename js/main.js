@@ -47,11 +47,19 @@
 var map = '';
 
 function initialize() {
+	var cognifide = new google.maps.LatLng(52.428201,16.936395);
+
     var mapOptions = {
       zoom: 17,
-      center: new google.maps.LatLng(52.428201,16.936395)
+      center: cognifide
     };
     map = new google.maps.Map(document.getElementById('map'),  mapOptions);
+	
+	var marker = new google.maps.Marker({
+      position: cognifide,
+      map: map,
+      title: 'Konkurs mow i ewaluacji Dywizji E'
+  });
 }
 
 // load google map
