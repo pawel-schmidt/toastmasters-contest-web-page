@@ -540,6 +540,18 @@ h6 {
 }
 
 /* ==========================================================================
+    Registration Styling
+   ========================================================================== */
+input[type=checkbox],
+input[type=radio] {
+  width: auto;
+  margin-right: 6px;
+}
+input + label {
+  font-weight: normal;
+}
+
+/* ==========================================================================
     Products Styling
    ========================================================================== */
 .product-item {
@@ -631,7 +643,7 @@ h6 {
   border: 0;
 }
 
-input, textarea {
+input, textarea, select {
   margin-bottom: 30px;
   background-color: #f6f7f8;
   padding: 14px;

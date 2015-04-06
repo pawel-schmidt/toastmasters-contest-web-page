@@ -325,7 +325,7 @@ http://www.templatemo.com/preview/templatemo_401_sprint
 				</table>
             </div> <!-- /.row -->
         </div> <!-- /.container -->
-    </div> <!-- /#agenda -->
+    </div> <!-- /#workshop -->
 
     <div id="register" class="content-section">
         <div class="container">
@@ -335,10 +335,130 @@ http://www.templatemo.com/preview/templatemo_401_sprint
                 </div> <!-- /.col-md-12 -->
             </div> <!-- /.row -->
             <div class="row">
-                
+                <div class="col-md-offset-2 col-md-8 text-center bigger-text">
+                    <p>Jeśli chcesz wziąć udział w konkursie jako uczestnik, sędzia czy też obserwator, zaznacz swoją obecność korzystając z poniższego formularza.</p>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    
+                    <div class="row contact-form">
+                    
+                        <fieldset class="col-md-6 col-sm-12">
+                            <legend>Twoje dane</legend>
+                            <div class="col-lg-6 col-md-12">
+                                <label for="first-name">Imię</label>
+                                <input id="first-name" type="text" name="first-name" placeholder="Jan" required>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <label for="last-name">Nazwisko</label>
+                                <input id="last-name" type="text" name="last-name" placeholder="Kowalski" required>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12">
+                                <label for="phone">Numer kontaktowy</label>
+                                <input id="phone" type="text" name="phone" placeholder="600 700 800" required>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-12">
+                                <label for="email">Adres e-mail</label>
+                                <input type="email" name="email" id="email" placeholder="jan.kowalski@toastmasters.org" required>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-12">
+                                <label for="club">Klub</label>
+                                <select name="club" required>
+                                    <option value="Bydgoszcz Toastmasters Professionals">Bydgoszcz Toastmasters Professionals</option>
+                                    <option value="Grudziądz Toastmasters">Grudziądz Toastmasters</option>
+                                    <option value="KontestMasters">KontestMasters</option>
+                                    <option value="POZnaj Toastmasters">POZnaj Toastmasters</option>
+                                    <option value="Sedian Toastmasters">Sedian Toastmasters</option>
+                                    <option value="Sokrates Toruń">Sokrates Toruń</option>
+                                    <option value="Ticity Toastmasters">Ticity Toastmasters</option>
+                                    <option value="Toastmasters Bydgoszcz">Toastmasters Bydgoszcz</option>
+                                    <option value="Toastmasters Gdańsk">Toastmasters Gdańsk</option>
+                                    <option value="Toastmasters Gdynia">Toastmasters Gdynia</option>
+                                    <option value="Toastmasters Olsztyn">Toastmasters Olsztyn</option>
+                                    <option value="Toastmasters Poznań">Toastmasters Poznań</option>
+                                    <option value="Toastmasters Sopot Leaders">Toastmasters Sopot Leaders</option>
+                                    <option value="Toastmasters Szczecin Passionate Speakers">Toastmasters Szczecin Passionate Speakers</option>
+                                    <option value="Verbal Victory">Verbal Victory</option>
+                                    <option disabled>---</option>
+                                    <option value="Nie należę do żadnego klubu Toastmasters">Nie należę do żadnego klubu Toastmasters</option>
+                                    <option value="Inny">Inny</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-12">
+                                <label for="club-other">Jeśli wybrałeś/aś "Inny" wpisz jaki</label>
+                                <input id="club-other" type="text" name="club-other" placeholder="Międzygalaktyczne Toastmasters">
+                            </div>
+                            
+                            <div class="col-sm-12">
+                                <label for="judge">Mam zrealizowane 6 projektów CC i mogę być sędzią w konkursie</label><br />
+                                <input type="checkbox" name="judge" id="judge-speech-pl" value="mowy PL"><label for="judge-speech-pl">Mów w języku polskim</label><br />
+                                <input type="checkbox" name="judge" id="judge-speech-en" value="mowy EN"><label for="judge-speech-en">Mów w języku angielskim</label><br />
+                                <input type="checkbox" name="judge" id="judge-speech-de" value="mowy DE"><label for="judge-speech-de">Mów w języku niemieckim</label><br />
+
+                                <input type="checkbox" name="judge" id="judge-eval-pl" value="ewaluacje PL"><label for="judge-eval-pl">Ewaluacji w języku polskim</label><br />
+                                <input type="checkbox" name="judge" id="judge-eval-en" value="ewaluacje EN"><label for="judge-eval-en">Ewaluacji w języku angielskim</label><br />
+                                <input type="checkbox" name="judge" id="judge-eval-de" value="ewaluacje DE"><label for="judge-eval-de">Ewaluacji w języku niemieckim</label><br />
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="col-md-6 col-sm-12">
+                            <legend>Atrakcje</legend>
+                            <div class="col-md-12">
+                                <label>Czy zjesz z nami posiłek podczas konkursu w sobotę 18 kwietnia? (20 zł)</label><br />
+                                <input type="radio" name="dinner" id="dinner-meat" value="mięsny" required/><label for="dinner-meat">Tak, poproszę mięsny</label><br />
+                                <input type="radio" name="dinner" id="dinner-wege" value="wegetariański"/><label for="dinner-wege">Tak, poproszę wegetariański</label><br />
+                                <input type="radio" name="dinner" id="dinner-none" value="brak"/><label for="dinner-none">Nie, dziękuję</label>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Czy chcesz wybrać się na kolację z toastmasterami w sobotę?</label><br />
+                                <input type="radio" name="supper" id="supper-meat" value="mięsny" required/><label for="supper-meat">Poproszę zupę i danie mięsne (42 zł)</label><br />
+                                <input type="radio" name="supper" id="supper-wege" value="wegetariański"/><label for="supper-wege">Poproszę zupę i danie wegetariańskie (42 zł)</label><br />
+                                <input type="radio" name="supper" id="supper-none" value="brak"/><label for="supper-none">Nie, dziękuję</label><br />
+                                <input type="checkbox" name="supper-dessert" id="supper-dessert" value="deser"/><label for="supper-dessert">Poproszę deser (8 zł)</label>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Czy chcesz wejściówkę na after-party w sobotę? (10 zł)</label><br />
+                                <input type="radio" name="after-party" id="after-party-yes" value="tak" required/><label for="after-party-yes">Tak, poproszę</label><br />
+                                <input type="radio" name="after-party" id="after-party-no" value="nie"/><label for="after-party-no">Nie, dziękuję</label>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Czy chcesz wybrać się na zwiedzanie Rogalowego Muzeum w Poznaniu w niedzielę o 13:45? (16 zł)</label><br />
+                                <input type="radio" name="museum" id="museum-yes" value="tak" required/><label for="museum-yes">Tak, poproszę</label><br />
+                                <input type="radio" name="museum" id="museum-no" value="nie"/><label for="museum-no">Nie, dziękuję</label>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Czy poszukujesz noclegu u toastmasterów z Poznania?</label><br />
+                                <input type="radio" name="accommodation" id="accommodation-yes" value="tak" required/><label for="accommodation-yes">Tak</label><br />
+                                <input type="radio" name="accommodation" id="accommodation-no" value="nie"/><label for="accommodation-no">Nie</label>
+                            </div>
+
+                        </fieldset>
+
+                        <div class="col-md-12">
+                            <p>Dziękujemy za wypełnienie formularza. Już w krótce na Twojego e-maila otrzymasz informacje, na jakie konto należy wpłacić pieniądze za wybrane opcje. Do usłyszenia!</p>
+                            <label for="message">Miejsce na Twój komentarz</label>
+                            <input type="text" name="message" id="message" placeholder="&quot;Jest super! Jest super! Więc o co Ci chodzi...?&quot;" required>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <input type="submit" name="register" value="Wyślij" id="register" class="button">
+                        </div>
+                     
+                    </div> <!-- /.contact-form -->
+                    
+                </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
-    </div> <!-- /#agenda -->
+    </div> <!-- /#register -->
 	
 	<div id="sponsors" class="content-section">
 		<div class="container">
@@ -473,7 +593,7 @@ http://www.templatemo.com/preview/templatemo_401_sprint
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
-    </div> <!-- /#agenda -->
+    </div> <!-- /#contact -->
 
     <div class="site-footer">
         <div class="container">
