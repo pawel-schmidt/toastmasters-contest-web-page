@@ -619,27 +619,29 @@ http://www.templatemo.com/preview/templatemo_401_sprint
                     </div>
                 </div> <!-- /.col-md-6 -->
                 <div class="col-md-6 col-sm-6">
-                    
-                    <div class="row contact-form">
-                    
-                        <fieldset class="col-md-6 col-sm-6">
-                            <input id="name" type="text" name="name" placeholder="Imię (i nazwisko)">
-                        </fieldset>
-                        <fieldset class="col-md-6 col-sm-6">
-                            <input type="email" name="email" id="email" placeholder="Adres email">
-                        </fieldset>
-                        <fieldset class="col-md-12">
-                            <input type="text" name="subject" id="subject" placeholder="Temat">
-                        </fieldset>
-                        <fieldset class="col-md-12">
-                            <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
-                        </fieldset>
-                        <fieldset class="col-md-12">
-                            <input type="submit" name="send" value="Wyślij" id="submit" class="button">
-                        </fieldset>
-                     
-                    </div> <!-- /.contact-form -->
-                    
+
+                    <!-- contact form -->
+                    <div class="contact-form">
+                        <form action="#" id="contact-form" class="row">
+                            <div class="row name-email">
+                                <div class="col-lg-6 col-xs-12">
+                                    <input type="text" name="name" id="name" placeholder="Imię i nazwisko" class="form-control">
+                                </div>
+                                <div class="col-lg-6 col-xs-12">
+                                    <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                                </div>
+                                <div class="col-xs-12">
+                                    <input type="text" name="subject" id="subject" placeholder="Temat" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <textarea name="message" id="message" placeholder="Wiadomość" class="form-control" rows="5"></textarea>
+                                <input type="submit" id="form-submit" value="Wyślij wiadomość">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end contact form -->
+
                 </div> <!-- /.col-md-6 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
@@ -672,6 +674,66 @@ http://www.templatemo.com/preview/templatemo_401_sprint
     <script src="js/bootstrap.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('#contact-form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 3
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                recipient: {
+                    required: true
+                },
+                message: {
+                    required: true,
+                    minlength: 10
+                }
+            },
+            messages: {
+                name: {
+                    required: "Na pewno Cię jakoś zwą, prawda?",
+                    minlength: "Imię i nazwisko musi zawierać min. 3 znaki."
+                },
+                email: {
+                    required: "Nie bój się, nie wysyłamy spamu ;-)",
+                    email: "Niepoprawny adres email."
+                },
+                recipient: {
+                    required: "Wybierz do kogo chcesz skierować wiadomość."
+                },
+                message: {
+                    required: "Nie lubimy pustych wiadomości. Ty też?",
+                    minlength: "Tylko tyle? Naprawdę?"
+                }
+            },
+            submitHandler: function(form) {
+                $(form).ajaxSubmit({
+                    type:"POST",
+                    data: $(form).serialize(),
+                    url:"process.php",
+                    success: function() {
+                        $('#contact-form :input').attr('disabled', 'disabled');
+                        $('#contact-form').fadeTo('slow', 0.15, function() {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor','default');
+                            $('#success').fadeIn();
+                        });
+                    },
+                    error: function() {
+                        $('#contact-form').fadeTo('slow', 0.15, function() {
+                            $('#error').fadeIn();
+                        });
+                    }
+                });
+            }
+        });
+    });
+    </script>
     <!-- templatemo 401 sprint -->
 </body>
 </html>
